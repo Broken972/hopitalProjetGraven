@@ -1,0 +1,32 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--backgroud);
+    color: var(--text);
+    font-size: 1.6rem;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+img{
+    max-width: 100%;
+}
+
+input{
+    border: 0;
+    outline: none;
+}
+
+::placeholder{
+    color: var(--text);
+}

@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.separator {
+  height: 300vh; }
+
+.separ {
+  height: 2rem; }
+
+.separ-1 {
+  height: 2rem;
+  background-color: var(--light); }
+
+h1 {
+  font-size: 3rem; }
+
+h6 {
+  font-size: 1.5rem; }
+
+.solene-2 {
+  margin-bottom: 1rem; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: var(--backgroud);
+  color: var(--text);
+  font-size: 1.6rem; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: var(--text); }
+
+img {
+  max-width: 100%; }
+
+input {
+  border: 0;
+  outline: none; }
+
+::placeholder {
+  color: var(--text); }
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5.5rem;
+  background-color: #555;
+  position: sticky;
+  left: 0;
+  top: 0; }
+  .home header {
+    background-color: none; }
+    .home header a {
+      display: flex;
+      align-items: center;
+      padding-left: 1rem;
+      color: var(--backgroud); }
+  .home nav {
+    background-color: none; }
+    .home nav ul {
+      display: flex; }
+      .home nav ul li {
+        padding: 1rem; }
+        .home nav ul li a {
+          color: var(--light); }
+          .home nav ul li a:hover {
+            color: white; }
+  .home div {
+    background-color: none; }
+    .home div p {
+      color: var(--backgroud);
+      padding-right: 1rem; }
+
+.ban-a {
+  display: flex;
+  align-items: center;
+  background-color: var(--light);
+  height: 80vh; }
+  .ban-a img {
+    margin: 0 20rem 0 20rem;
+    height: 60vh; }
+  .ban-a .solene {
+    text-align: center; }
+    .ban-a .solene p {
+      color: none;
+      margin-bottom: 1rem; }
+    .ban-a .solene a {
+      color: var(--primary); }
+      .ban-a .solene a:hover {
+        text-decoration: underline; }
+
+.informations {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100rem;
+  background-color: var(--backgroud); }
+  .informations h3 {
+    text-align: center;
+    text-decoration: underline; }
+  .informations h5 {
+    text-align: center; }
+  .informations h6 {
+    text-align: center; }
+  .informations p {
+    text-align: center;
+    font-size: 1.5rem; }
+
+.tableau {
+  margin-top: 5rem;
+  display: grid;
+  gap: 1rem;
+  grid: ". rdvi rdv ." 40rem ". app appi ." 40rem / auto 50rem 50rem auto; }
+  .tableau img {
+    height: 40rem; }
+  .tableau .rdv {
+    grid-area: rdv;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .tableau .rdv h3 {
+      margin: 1rem; }
+    .tableau .rdv form {
+      display: flex;
+      flex-direction: column; }
+      .tableau .rdv form input {
+        padding: 1rem;
+        margin: 0.7rem;
+        border-radius: 1rem;
+        cursor: pointer; }
+      .tableau .rdv form button {
+        padding: 1rem;
+        margin-top: 3rem;
+        border-radius: 1rem;
+        background-color: var(--text);
+        color: white;
+        border: 0;
+        outline: 0; }
+        .tableau .rdv form button:hover {
+          opacity: 0.8; }
+  .tableau .rdvi {
+    grid-area: rdvi;
+    height: 10rem; }
+  .tableau .app {
+    grid-area: app;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    .tableau .app p {
+      width: 30rem;
+      text-align: center; }
+    .tableau .app a {
+      padding: 1rem;
+      color: var(--primary); }
+      .tableau .app a:hover {
+        text-decoration: underline; }
+  .tableau .appi {
+    grid-area: appi; }
+
+.docteur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: none; }
+  .docteur .spe {
+    margin: 5rem;
+    text-align: center; }
+    .docteur .spe h3 {
+      font-size: 2.5rem; }
+    .docteur .spe h6 {
+      font-size: 2rem; }
+  .docteur .dblock {
+    width: 90vw;
+    display: grid;
+    grid: "h1 f1 h2" 10rem "h f h22" 50rem "h f h22" 10rem / auto auto auto;
+    gap: 2rem; }
+    .docteur .dblock img {
+      height: 50rem; }
+    .docteur .dblock .h {
+      grid-area: h;
+      margin: auto; }
+    .docteur .dblock .h1 {
+      grid-area: h1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--light);
+      border-radius: 1rem;
+      font-size: 2rem; }
+      .docteur .dblock .h1:hover {
+        opacity: 0.8; }
+    .docteur .dblock .h22 {
+      grid-area: h22;
+      margin: auto; }
+    .docteur .dblock .h2 {
+      grid-area: h2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--light);
+      border-radius: 1rem;
+      font-size: 2rem; }
+      .docteur .dblock .h2:hover {
+        opacity: 0.8; }
+    .docteur .dblock .f {
+      grid-area: f;
+      margin: auto; }
+    .docteur .dblock .f1 {
+      grid-area: f1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--light);
+      border-radius: 1rem;
+      font-size: 2rem; }
+      .docteur .dblock .f1:hover {
+        opacity: 0.8; }
+
+.style {
+  background-color: var(--light); }
+  .style .blo {
+    text-align: center;
+    padding: 5rem; }
+    .style .blo h3 {
+      font-size: 2.5rem; }
+    .style .blo h6 {
+      font-size: 2rem; }
+  .style .news {
+    width: 90rem;
+    margin: auto;
+    background-color: var(--backgroud); }
+    .style .news .blog {
+      display: flex;
+      align-items: center;
+      text-align: center; }
+      .style .news .blog a {
+        color: var(--primary); }
+        .style .news .blog a:hover {
+          text-decoration: underline; }
+
+.tableau-2 {
+  margin-top: 5rem;
+  background-color: none;
+  display: grid;
+  grid: ". contact chiffre ." 40rem / auto 50rem 50rem auto;
+  gap: 2rem; }
+  .tableau-2 .contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--light);
+    border-radius: 1rem; }
+    .tableau-2 .contact form {
+      display: flex;
+      flex-direction: column; }
+      .tableau-2 .contact form input, .tableau-2 .contact form textarea {
+        width: 19rem;
+        padding: 1rem;
+        margin: 0.7rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        resize: none;
+        outline: 0; }
+      .tableau-2 .contact form button {
+        padding: 1rem;
+        margin-top: 3rem;
+        border-radius: 1rem;
+        background-color: var(--text);
+        color: white;
+        width: 19rem;
+        border: 0;
+        outline: 0; }
+        .tableau-2 .contact form button:hover {
+          opacity: 0.8; }
+  .tableau-2 .chiffre {
+    grid-area: chiffre;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    border-radius: 1rem; }
+    .tableau-2 .chiffre .tem {
+      display: flex;
+      width: 30rem; }
+      .tableau-2 .chiffre .tem p {
+        margin: 1rem; }
+      .tableau-2 .chiffre .tem img {
+        width: 20rem; }
+
+footer {
+  margin-top: 5rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--light); }
+  footer .grav a {
+    display: flex;
+    align-items: center; }
+  footer li a:hover {
+    text-decoration: underline;
+    opacity: 0.8; }
+
+.copy {
+  text-align: center;
+  background-color: var(--text);
+  color: var(--backgroud); }

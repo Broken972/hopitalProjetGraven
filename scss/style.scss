@@ -1,0 +1,441 @@
+@import "reset";
+@import "bases";
+
+
+// Home
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.5rem;
+    background-color: #555;
+    position: sticky;
+    left: 0;
+    top: 0;
+
+   header{
+       background-color: none;
+       a{
+           display: flex;
+           align-items: center;
+           padding-left: 1rem;
+           color: var(--backgroud);
+       }
+   }
+
+   nav{
+       background-color: none;
+
+       ul{
+           display: flex;
+
+           li{
+               padding: 1rem;
+
+               a{
+                color: var(--light);
+                &:hover{
+                
+                    color: white;
+                }
+               }
+               
+           }
+       }
+   }
+   
+   div{
+       background-color: none;
+       p{
+        color: var(--backgroud);
+        padding-right: 1rem;
+       }
+   }
+
+
+}
+
+//bannière d'accueil 
+
+.ban-a{
+    display: flex;
+    align-items: center;
+    background-color: var(--light);
+    height: 80vh;
+
+    img{
+        margin: 0 20rem 0 20rem;
+        height: 60vh;
+    }
+    .solene{
+        text-align: center;
+        p{
+            color: none;
+            margin-bottom: 1rem;
+        }
+        a{
+            
+            color: var(--primary);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+    
+
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100rem;
+    background-color: var(--backgroud);
+    h3{
+        text-align: center;
+        text-decoration: underline;
+    }
+    h5{
+        text-align: center;
+    }
+    h6{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+ 
+}
+
+// tableau
+
+.tableau {
+    margin-top: 5rem;
+    display: grid;
+    gap: 1rem;
+    grid: 
+    ". rdvi rdv ." 40rem
+    ". app appi ." 40rem
+    / auto 50rem 50rem auto;
+
+    img{
+        height: 40rem;
+    }
+
+    .rdv{
+        grid-area: rdv;
+        background-color: var(--light);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            margin: 1rem;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            input{
+                padding: 1rem;
+                margin: 0.7rem;
+                border-radius: 1rem;
+                cursor: pointer;
+            }
+            button{
+                padding: 1rem;
+                margin-top: 3rem;
+                border-radius: 1rem;
+                background-color: var(--text);
+                color: white;
+                border: 0;
+                outline: 0;
+                &:hover{
+                    opacity: 0.8;
+                }
+                
+
+            }
+        }
+    
+    }
+    .rdvi{
+        grid-area: rdvi;
+        height: 10rem;
+        
+    }
+    .app{
+        grid-area: app;
+        background-color: var(--light);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        p{
+            width: 30rem;
+            text-align: center;
+        }
+        a{
+            padding: 1rem;
+            color: var(--primary);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    
+    }
+    .appi{
+        grid-area: appi;
+        
+    }
+
+}
+
+// docteur
+
+.docteur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: none;
+    .spe{
+        margin: 5rem;
+        text-align: center;
+        h3{
+            font-size: 2.5rem;
+        }
+        h6{
+            font-size: 2rem;
+        }
+
+    }
+    
+
+    .dblock{
+        width: 90vw;
+        display: grid;
+        grid: 
+        "h1 f1 h2" 10rem
+        "h f h22" 50rem
+        "h f h22" 10rem
+        / auto auto auto;
+        gap: 2rem;
+        
+        
+
+        img{
+            height: 50rem;
+        }
+
+        .h{
+            grid-area: h;
+            margin: auto;
+            
+            
+        }
+        .h1{
+            grid-area: h1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--light);
+            border-radius: 1rem;
+            font-size: 2rem;
+            &:hover{
+                opacity: 0.8;
+            }
+
+        }
+        .h22{
+            grid-area: h22;
+            margin: auto;
+            
+
+        }
+        .h2{
+            grid-area: h2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--light);
+            border-radius: 1rem;
+            font-size: 2rem;
+            &:hover{
+                opacity: 0.8;
+            }
+            
+
+        }
+        .f{
+            grid-area: f;
+            margin: auto;
+           
+
+        }
+        .f1{
+            grid-area: f1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--light);
+            border-radius: 1rem;
+            font-size: 2rem;
+            &:hover{
+                opacity: 0.8;
+            }
+
+        }
+    }
+}
+// blog
+
+.style{
+    background-color: var(--light);
+
+    .blo{
+        text-align: center;
+        padding: 5rem;
+        
+            h3{
+                font-size: 2.5rem;
+            }
+            h6{
+                font-size: 2rem;
+            }       
+        }
+    
+    .news{
+        width: 90rem;
+        margin: auto;
+        background-color: var(--backgroud);
+        
+        .blog{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        a{
+            color: var(--primary);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    
+        }
+    }
+
+}
+
+.tableau-2{
+    margin-top: 5rem;
+    background-color: none;
+    display: grid;
+    grid: 
+    ". contact chiffre ." 40rem
+    / auto 50rem 50rem auto;
+
+    gap: 2rem;
+
+
+    .contact{
+        grid-area: contact;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--light);
+        border-radius: 1rem;
+        
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            input,textarea{
+                width: 19rem;
+                padding: 1rem;
+                margin: 0.7rem;
+                border-radius: 1rem;
+                cursor: pointer;
+                resize: none;
+                outline: 0;
+            }
+            button{
+                padding: 1rem;
+                margin-top: 3rem;
+                border-radius: 1rem;
+                background-color: var(--text);
+                color: white;
+                width: 19rem;
+                
+                border: 0;
+                outline: 0;
+                &:hover{
+                    opacity: 0.8;
+                }
+                
+
+            }
+        }
+    }
+    .chiffre{
+        grid-area: chiffre;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--light);
+        border-radius: 1rem;
+
+        .tem{
+            display: flex;
+            width: 30rem;
+            p{
+                margin: 1rem;
+            }
+            img{
+                width: 20rem;
+
+            }
+        }
+        
+    }
+}
+
+
+footer{
+    margin-top: 5rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--light);
+    .grav{
+        a{
+            display: flex;
+            align-items: center;
+            
+        }
+    }
+    li{
+        a{
+            &:hover{
+                text-decoration: underline;
+                opacity: 0.8;
+            }
+        }
+    }
+
+}
+
+
+.copy{
+    text-align: center;
+    background-color: var(--text);
+    color: var(--backgroud);
+}
+
